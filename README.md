@@ -1,65 +1,52 @@
-﻿# Car_Defect_Detection
-# 🧒 Missing Child Identification System
+🚗 Car Defect Detection System Using Image Processing & Deep Learning
 
-An AI-powered desktop application that helps identify and register missing children using face recognition technology. It provides interfaces for the **general public**, **police authorities**, and supports **real-time video surveillance** for child recognition.
-
----
-
-## 📌 Features
-
-- 👤 **Child Registration:** Upload multiple photos and fill out personal details.
-- 🕵️ **Face Recognition:** Detect and recognize missing children using pre-trained models.
-- 📷 **Image & Video Input:** Supports both image upload and live video surveillance (via webcam).
-- 🛂 **Police Login:** Secure portal for authorized personnel to register and track cases.
-- 🌐 **Public Portal:** Allows citizens to report or scan children to assist in reunification efforts.
+This project is an AI-powered system designed to detect external surface defects in cars from uploaded images. It uses image processing and machine learning techniques to identify scratches, dents, cracks, and other visual damages to assist in automotive inspection, insurance assessment, and repair workflows.
 
 ---
 
-##  Tech Stack
+🧠 Features
 
-- **Frontend:** Tkinter GUI (Python)
-- **Backend:** OpenCV, NumPy
-- **Face Recognition:** LBPHFaceRecognizer (OpenCV)
-- **Database:** MySQL (via `pymysql`)
-- **Libraries:** PIL, threading, shutil, cv2
+🔍 Detects visible defects like scratches, dents, cracks, paint issues
 
----
+🧾 Classifies severity (minor, moderate, major) of damage
 
-## How to Run
+📷 Supports image upload for real-time predictions
 
-### 1. Clone the Repository
+📊 Displays detection confidence scores
 
-```bash
-git clone https://github.com/HarshitaKuppannagari/Missing-Child-Identification.git
-cd Missing-Child-Identification
-```
+🌐 Simple UI for testing and demonstration (Streamlit/Flask)
 
-### 2. Install Requirements
-
-Install dependencies (ensure Python 3.8+ is installed):
-
-```bash
-pip install opencv-python Pillow pymysql numpy
-```
-
-### 3. Setup MySQL Database
-
-- Create a MySQL database named: `MissingChild`
-- Create a table `childdata` with appropriate columns matching the fields used in `dbHandler.py`
-- Update DB credentials in `dbHandler.py` if needed (`user`, `password`)
-
-### 4. Run the Application
-
-```bash
-python Home.py
-```
+📂 Random image selector for testing multiple cases
 
 ---
 
+🛠️ Tech Stack
 
-##  Acknowledgement
+Language: Python
 
-This project was created to leverage AI and community efforts in helping locate and identify missing children. Every image scan counts.
+Libraries: OpenCV, TensorFlow/Keras, NumPy, Pandas, Matplotlib
+
+Model: Pre-trained CNN or custom model trained on car damage dataset
+
+Frontend: Streamlit / Flask (for demo UI)
+
+Deployment: Local server or Streamlit Cloud
+
+(Optional): SQLite or Firebase for logging image metadata
 
 ---
+
+📚 Dataset
+Used Car Damage Detection dataset (or similar).
+
+Preprocessed and augmented images for better model performance.
+
+---
+
+🔮 Future Enhancements
+🎥 Add support for video or real-time camera input
+
+📱 Deploy as a mobile/web app for insurance or garage use
+
+🗂 Integrate user authentication and defect history tracking
 
